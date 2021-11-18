@@ -17,4 +17,7 @@ describe 'the program' do
   it 'outputs the array [1, 2, 3] using the p method' do
     expect { load 'app.rb' }.to output(a_string_including("[1, 2, 3]\n")).to_stdout
   end
+  it 'outputs the string "Pass this test, please." using the print method' do
+  expect { load 'app.rb' }.to output(a_string_including("Pass this test, please.")).to_stdout
+end
 end
